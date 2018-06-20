@@ -3,54 +3,83 @@
 /* 메인 스타일 CSS */
 
 /* Google Web Fonts */
-@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Assistant|Londrina+Shadow|Nanum+Gothic|Timmana');
 /*	
+	font-family: 'Londrina Shadow', cursive;
+	font-family: 'Timmana', sans-serif;
+	font-family: 'Assistant', sans-serif;
 	font-family: 'Nanum Gothic', sans-serif;
-	font-family: 'Do Hyeon', sans-serif;
 */
 /*
-	메인 색 : #48ffc4;
+	메인 색 : 하늘 - #96c3e2;
+	폰트 색 : 블랙 - #221815;
+	포인트 색 : 레드 - #e94340;
 */
 html{width: 100%; height: 100%;}
-*{text-decoration: none; font-family: 'Nanum Gothic', sans-serif; text-align: center;}
-a {color: #000;}
+*{text-decoration: none; font-family: 'Assistant'; text-align: center; color: #221815;}
+a {color: #221815;}
+.Title{font-size: 80px; font-weight: bold;letter-spacing: -5px; text-transform: uppercase; text-align: left;}
+.Text{line-height: 1.4; font-size: 14px; text-align: left;}
+
+
 /*** 헤더 ***/
 	/*로고*/
-		.logo { width: 100px; height: 100px; position: fixed;top:20px; left:20px;}
+		.logo { width: 100px; height: 100px; position: fixed;top:20px; left:26px;}
 		/* 마우스 이벤트*/
 			.logo:hover {animation: ani_logo 0.5s infinite ease;}
 				@keyframes ani_logo {
-				    from {top: 5px; left:15px;}
-				    to{top: 25px; left:15px;}
+				    from {top: 5px; left:20px;}
+				    to{top: 25px; left:20px;}
 				}
 	/*cart*/
-		.greenBg { width:90px; height:40px; line-height: 40px; background: #48ffc4; position: fixed; top: 20px; right: 20px;}
-		.blackBg{position: absolute;bottom: 0; left: 0; right: 0; background: #000; overflow: hidden; width: 90px; height: 0; transition: .5s ease; z-index: 9;}
-		.text{ color: #000; text-transform: uppercase; font-weight: bold; font-style: italic; transition: 0.3s;}
+		.blueBg { width:140px; height:40px; line-height: 40px; background: #96c3e2; position: fixed; top: 20px; right: 20px;}
+		.blackBg{position: absolute;bottom: 0; left: 0; right: 0; background: #000; overflow: hidden; width: 140px; height: 0; transition: .5s ease; z-index: 9;}
+		.text{ color: #000; font-size : 18px; text-transform: uppercase; font-weight: bold; transition: 0.3s; letter-spacing: 2px; font-family: 'Assistant', sans-serif; font-weight: bold;}
 		/* 마우스 이벤트*/
 			.cart:hover .blackBg{height: 100%;}
-			.cart:hover .text{color: #48ffc4;z-index: 99; position: absolute;bottom: 0; left: 0; right: 0;}
+			.cart:hover .text{color: #96c3e2;z-index: 99; position: absolute;bottom: 0; left: 0; right: 0;}
 	/*menu*/
-		.menuBlackBg {width: 90px; height: 40px; background: #000; line-height: 40px; transform: rotate(-90deg); transform-origin: 0;position: fixed;top: 50%; left:20px; font-style: italic; margin: 45px 20px;}
-		.menuGreenBg{position: absolute;bottom: 0; left: 0; right: 0; background: #48ffc4; overflow: hidden; width: 90px; height: 0; transition: .5s ease; z-index: 9;}
-		.menuText {color: #48ffc4;}
+		.menuBlackBg {width: 96px; height: 42px; background: #000; line-height: 42px; transform: rotate(-90deg); transform-origin: 0;position: fixed;top: 0; bottom: 0; left:26px; margin:  auto 26px;}
+		.menuBlueBg{position: absolute;bottom: 0; left: 0; right: 0; background: #96c3e2; overflow: hidden; width: 96px; height: 0; transition: .5s ease; z-index: 9;}
+		.menuText {color: #96c3e2; font-weight: bold;}
 		/* 마우스 이벤트 */
-			.menu:hover .menuGreenBg{height: 100%;}
+			.menu:hover .menuBlueBg{height: 100%;}
 			.menu:hover .menuText{color: #000; z-index: 99;position: absolute;bottom: 0; left: 0; right: 0;}
-	/*address*/
-		.address{position: fixed;bottom: 20px; left: 20px; text-align: left;}
-		.addressText{color: #000; line-height: 1.5; font-size: 14px; font-weight: bold;}
+	/*mark*/
+		.mark{position: fixed;bottom: 20px; left: 26px; text-align: left;}
+		.markText{color: #000; line-height: 1.5; font-size: 14px; font-weight: lighter;}
 		/* 마우스 이벤트*/
-		.address:hover {text-decoration: underline;}
+		.mark:hover {text-decoration: underline;}
 	/*sns(facebook, instagram)*/
-		.facebook, .instagram {font-size: 25px; font-weight: bold; }
-		.facebook {position: fixed; bottom: 70px; right: 30px;}
-		.instagram {position: fixed; bottom: 20px; right: 30px;}
+		.facebook, .instagram {font-size: 30px; font-weight: bold; }
+		.facebook {position: fixed; bottom: 70px; right: 50px;}
+		.instagram {position: fixed; bottom: 20px; right: 50px;}
 		i{transition: .3s;}
 		/*마우스 이벤트*/
 		.facebookLi:hover i {transform: rotate(-30deg); }
 		.instagramLi:hover i {transform: rotate(-30deg); }
 /*** sec 1 ***/
-	/*.sec1 {width: 100%; height:1250px; position: relative;}
+	.sec1 {width: 100%; height:1250px;}
 	video{width: 1400px; height: auto; padding: 100px 0;}
-	.line {text-indent: -9999px; width:10px; height:250px; background: #48ffc4; position: absolute; top: 733px; left: 0; right: 0; margin: 0 auto; transition: .3s;}*/
+/***sec 2***/
+	.sec2{width: 72.1875%; height: auto; margin: 0 auto 300px auto; overflow: hidden;}
+	.sec2>div{width: 50%; float: left; }
+	.paragraph {padding: 320px 0 0 40px; box-sizing: border-box;}
+	.paragraph p{text-align: left;}
+	.sec2Text1{font-weight: bold;padding: 25px 0 15px;}
+/***섹션3***/
+	.sec3{width: 100%; height: 800px; background: url(img/bg1.png) no-repeat; padding-top: 410px;}
+	.sec3 p{color: #fff;}
+	.redLine { background: #e94340; width:140px; height:10px; text-indent: -9999px; margin: 0 auto;}
+	.sec3Subtitle{font-size: 30px; font-weight: bold; padding-bottom: 30px;}
+	.sec3Title{font-size: 125px; font-weight: bold;}
+/***센션 4***/
+	.sec4{width: 100%; height: 687px; }
+	.sec4Wrap{width: 72.1875%; margin: 0 auto; padding-top: 300px;}
+	.sec4Box{width: 50%; float: left;}
+	.sec4Img {text-align: left;}
+	.sec4p {padding: 240px 0 0 150px; box-sizing: border-box;}
+/***섹션 5***/
+	.sec5{ width: 100%; height: 1861px; background: url(img/bg2.png); }
+	.sec5Wrap{width: 72.1875%;margin: 0 auto; background: gold;position: relative;}
+	.sec5Title{position: absolute;top: 817px;}
