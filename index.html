@@ -10,7 +10,9 @@
 	<!--폰트어썸-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<!--제이쿼리-->
-	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="common/jquery-3.3.1.min.js"></script>
+	<!--마퀴-->
+	<script src="js/jquery.marquee.min.js"></script>
 
 </head>
 <body>
@@ -80,8 +82,7 @@
 				bt the readable content of page when loooking at its layout.
 			</p>
 		</div>
-		<div class="box img">
-			<div></div>
+		<div class="imgBox">
 			<img src="img/img1.jpg" alt="sec2pic">
 		</div>
 	</section>
@@ -97,7 +98,7 @@
 <!--섹션4-->
 	<section class="sec4" >
 		<div class="sec4Wrap">
-			<div class="sec4Img sec4Box">
+			<div class="sec4Box imgBox">
 				<img src="img/img2.jpg" alt="sec4img">	
 			</div>
 			<div class="sec4p sec4Box">
@@ -106,9 +107,8 @@
 				There is no one who loves pain itself, who seeks after simply because it is pain..."</p>
 			</div>
 		</div>
-
 	</section>
-
+<!--섹션 5-->
 	<section class="sec5" >
 		<div class="sec5Wrap">
 			<p class="Title sec5Title">MEMBER</p>
@@ -153,19 +153,30 @@
 		</div>
 		<div class="sec6Wrap">
 			<div class="line line1">
-				<img src="img/img3.jpg" alt="블랙스트라이프티셔츠">
-				<img src="img/img4.jpg" alt="날개 맨투맨">
+				<div class="product product1">
+					<img src="img/img3.jpg" alt="블랙스트라이프티셔츠">
+				</div>
+				<div class="product product2">
+					<img src="img/img4.jpg" alt="날개 맨투맨">
+				</div>
 			</div>
 			<div class="line line2">
-				<img src="img/img5.jpg" alt="이모티콘 맨투맨">
-				<img src="img/img6.jpg" alt="슈퍼맨 맨투맨">
+				<div class="product product3">
+					<img src="img/img5.jpg" alt="이모티콘 맨투맨">
+				</div>
+				<div class="product product4">
+					<img src="img/img6.jpg" alt="슈퍼맨 맨투맨">
+				</div>
 			</div>
 			<div class="line line3">
-				<img src="img/img7.jpg" alt="남색 형형색색 스트라이프 티셔츠">
-				<img src="img/img8.jpg" alt="빨노 스트라이프 티셔츠">
+				<div class="product product5">
+					<img src="img/img7.jpg" alt="남색 형형색색 스트라이프 티셔츠">				
+				</div>
+				<div class="product product6">
+					<img src="img/img8.jpg" alt="빨노 스트라이프 티셔츠">	
+				</div>
 			</div>
 		</div>
-		
 	</section>
 <!--섹션7-->
 	<section class="sec7">
@@ -239,7 +250,7 @@
 	</section>
 </article>
 <!--스크립트-->
-<script src="js/index.js"></script>
+<script src="index.js"></script>
 
 
 </body>
