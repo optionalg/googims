@@ -28,8 +28,8 @@ a {color: #221815;}
 		/* 마우스 이벤트*/
 			.logo:hover {animation: ani_logo 0.5s infinite ease;}
 				@keyframes ani_logo {
-				    from {top: 5px; left:20px;}
-				    to{top: 25px; left:20px;}
+				    from {top: 5px; left:26px;}
+				    to{top: 25px; left:26px;}
 				}
 	/*cart*/
 		.blueBg { width:140px; height:40px; line-height: 40px; background: #96c3e2; position: fixed; top: 20px; right: 20px;}
@@ -67,19 +67,48 @@ a {color: #221815;}
 	.paragraph {padding: 320px 0 0 40px; box-sizing: border-box;}
 	.paragraph p{text-align: left;}
 	.sec2Text1{font-weight: bold;padding: 25px 0 15px;}
-/***섹션3***/
+/***sec 3***/
 	.sec3{width: 100%; height: 800px; background: url(img/bg1.png) no-repeat; padding-top: 410px;}
 	.sec3 p{color: #fff;}
 	.redLine { background: #e94340; width:140px; height:10px; text-indent: -9999px; margin: 0 auto;}
 	.sec3Subtitle{font-size: 30px; font-weight: bold; padding-bottom: 30px;}
 	.sec3Title{font-size: 125px; font-weight: bold;}
-/***센션 4***/
+/***sec 4***/
 	.sec4{width: 100%; height: 687px; }
 	.sec4Wrap{width: 72.1875%; margin: 0 auto; padding-top: 300px;}
 	.sec4Box{width: 50%; float: left;}
 	.sec4Img {text-align: left;}
 	.sec4p {padding: 240px 0 0 150px; box-sizing: border-box;}
-/***섹션 5***/
-	.sec5{ width: 100%; height: 1861px; background: url(img/bg2.png); }
-	.sec5Wrap{width: 72.1875%;margin: 0 auto; background: gold;position: relative;}
-	.sec5Title{position: absolute;top: 817px;}
+/***sec 5***/
+	.sec5{ width: 100%; height: 2800px; background: url(img/bg2.png) no-repeat; }
+	.sec5Wrap{width: 72.1875%;margin: 0 auto; }
+	.sec5Title{padding-top: 817px; }
+	.sec5FigG{padding-top: 20px; height: 743px; overflow: hidden;}
+	figure{width: 800px; position: relative; float: left; padding-left: 570px;}
+	.memFig img:nth-child(1) {display: block; padding-left: 300px;}
+	.memFig img:nth-child(2) {display: none; padding-left: 300px;}
+	.memFig:hover img:nth-child(1) {display: none; }
+	.memFig:hover img:nth-child(2) {display: block;}
+	.sec5figcap {font-size: 42px; font-weight: bold; text-align: right; position: absolute; top: 50px; right: 430px;}
+	.sec5figcap span{font-size: 26px; font-weight: normal;}
+/***sec6***/
+	.sec6{width: 100%; height: 3313px; background: url(img/bg3.png) no-repeat;}
+	.sec6Logo {padding: 120px 0 0 800px;}
+	.sec6Wrap {width: 72.1875%;  margin: 0 auto; padding-top: 340px;}
+	.line{ width: 95%; margin: 0 auto; padding-bottom: 20px;}
+	.line1 img:first-child{padding-right: 80px; padding-bottom: 135px;}
+	.line2 img:last-child{padding-left: 65px; padding-bottom: 120px;}
+	.line3 img:first-child{padding-right: 80px; padding-bottom: 112px;}
+/***sec7***/
+	.sec7{height: 800px; position: relative;}
+	.sec7 .Title { padding: 160px 0 0 290px; }
+	.balloon {position: absolute;right: 290px; top: 250px;}
+	.store {width: 100%; height: 47px; line-height: 47px; overflow: hidden; padding-top: 220px;}
+	.store li{padding: 0 80px 0 80px; float: left;}
+/***sec8***/
+	.sec8{width: 100%; height: 570px; background: url(img/bg4.png)no-repeat; position: relative;}
+	.sec8Nav {font-size: 24px; font-weight: bold;line-height: 1.7; padding : 200px 0 0 1450px;}
+	.sec8Nav li {width: 250px; text-align: left; transform: rotate(-15deg);}
+	.sec8Nav a { width: 250px; }
+	.sec8Nav span {font-weight: lighter;}
+	.sec8 footer{position: absolute;bottom: 28px; left: 32px;}
