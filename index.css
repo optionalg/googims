@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* 메인 스타일 CSS */
+
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Gothic');
+/*	
+	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Do Hyeon', sans-serif;
+*/
+/*
+	메인 색 : #48ffc4;
+*/
+html{width: 100%; height: 100%;}
+*{text-decoration: none; font-family: 'Nanum Gothic', sans-serif; text-align: center;}
+a {color: #000;}
+/*** 헤더 ***/
+	/*로고*/
+		.logo { width: 100px; height: 100px; position: fixed;top:20px; left:20px;}
+		/* 마우스 이벤트*/
+			.logo:hover {animation: ani_logo 0.5s infinite ease;}
+				@keyframes ani_logo {
+				    from {top: 5px; left:15px;}
+				    to{top: 25px; left:15px;}
+				}
+	/*cart*/
+		.greenBg { width:90px; height:40px; line-height: 40px; background: #48ffc4; position: fixed; top: 20px; right: 20px;}
+		.blackBg{position: absolute;bottom: 0; left: 0; right: 0; background: #000; overflow: hidden; width: 90px; height: 0; transition: .5s ease; z-index: 9;}
+		.text{ color: #000; text-transform: uppercase; font-weight: bold; font-style: italic; transition: 0.3s;}
+		/* 마우스 이벤트*/
+			.cart:hover .blackBg{height: 100%;}
+			.cart:hover .text{color: #48ffc4;z-index: 99; position: absolute;bottom: 0; left: 0; right: 0;}
+	/*menu*/
+		.menuBlackBg {width: 90px; height: 40px; background: #000; line-height: 40px; transform: rotate(-90deg); transform-origin: 0;position: fixed;top: 50%; left:20px; font-style: italic; margin: 45px 20px;}
+		.menuGreenBg{position: absolute;bottom: 0; left: 0; right: 0; background: #48ffc4; overflow: hidden; width: 90px; height: 0; transition: .5s ease; z-index: 9;}
+		.menuText {color: #48ffc4;}
+		/* 마우스 이벤트 */
+			.menu:hover .menuGreenBg{height: 100%;}
+			.menu:hover .menuText{color: #000; z-index: 99;position: absolute;bottom: 0; left: 0; right: 0;}
+	/*address*/
+		.address{position: fixed;bottom: 20px; left: 20px; text-align: left;}
+		.addressText{color: #000; line-height: 1.5; font-size: 14px; font-weight: bold;}
+		/* 마우스 이벤트*/
+		.address:hover {text-decoration: underline;}
+	/*sns(facebook, instagram)*/
+		.facebook, .instagram {font-size: 25px; font-weight: bold; }
+		.facebook {position: fixed; bottom: 70px; right: 30px;}
+		.instagram {position: fixed; bottom: 20px; right: 30px;}
+		i{transition: .3s;}
+		/*마우스 이벤트*/
+		.facebookLi:hover i {transform: rotate(-30deg); }
+		.instagramLi:hover i {transform: rotate(-30deg); }
+/*** sec 1 ***/
+	/*.sec1 {width: 100%; height:1250px; position: relative;}
+	video{width: 1400px; height: auto; padding: 100px 0;}
+	.line {text-indent: -9999px; width:10px; height:250px; background: #48ffc4; position: absolute; top: 733px; left: 0; right: 0; margin: 0 auto; transition: .3s;}*/

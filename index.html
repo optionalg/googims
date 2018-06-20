@@ -7,6 +7,8 @@
 	<title>Gugims renewal</title>
 	<link rel="stylesheet" href="common/reset.css">
 	<link rel="stylesheet" href="index.css">
+	<!--폰트어썸-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<!--제이쿼리-->
 	<script src="js/jquery-3.3.1.min.js"></script>
 
@@ -14,23 +16,54 @@
 <body>
 <!--헤더-->
 	<header >
-		<ul>
-			<li><a href="#"><img src="#" alt=""></a></li>
-			<li><a href="#">SouMisson</a></li>
-			<li><a href="#">Menu</a></li>
-			<li><a href="#">ADRESS</a></li>
-			<li><a href="#">INSTAGRAM</a></li>
-			<li><a href="#">FACEBOOK</a></li>
+		<ul class="nav">
+			<li class="logo">
+				<a href="index.html">
+					<img src="imgEx/logo.svg" alt="로고">
+				</a>
+			</li>
+			<li class="cart">
+				<a href="#">
+					<div class="greenBg">
+						<div class="blackBg"></div>
+						<div class="text">CART</div>
+					</div>
+				</a>
+			</li>
+			<li class="menu">
+				<a href="#">
+				<div class="menuBlackBg">
+						<div class="menuGreenBg"></div>
+						<div class="text menuText">menu</div>
+					</div>
+				</a>
+			</li>
+			<li class="address">
+				<a href="#" class="addressText">
+					DIRECTOR - FELIX KIM <br>
+					POTOGRAPHY - ELICE NA
+				</a>
+			</li>
+			<li class="facebookLi">
+				<a href="#" class="facebook">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+			</li>
+			<li class="instagramLi">
+				<a href="#" class="instagram">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
 		</ul>
 	</header>
 
 <article id="content">
-<!--섹션1 : INDEX-->
+<!--섹션1 : video-->
 	<section class="sec1" >		
-		<video>
-			<source src="#" type="">
+		<video loop="" autoplay=""  preload="auto">
+			<source src="imgEx/googims.mp4" type="video/mp4">
 		</video>
-		<div class="line"></div>
+		<div class="line">line</div>
 	</section>
 <!--섹션2 : SOME WORK-->
 	<section class="sec2" ">
@@ -72,7 +105,7 @@
 			</div>
 		</div>
 	</section>
-<!--섹션46-->
+<!--섹션6-->
 	<section class="sec6" >
 		<div>
 			<img src="#" alt="">
@@ -83,6 +116,30 @@
 			<img src="#" alt="">
 		</div>
 	</section>
+<!--섹션7-->
+	<section class="sec7">
+		<h1></h1>
+		<ul>
+			<li><img src="#" alt=""></li>
+			<li><img src="#" alt=""></li>
+			<li><img src="#" alt=""></li>
+			<li><img src="#" alt=""></li>
+			<li><img src="#" alt=""></li>
+			<li><img src="#" alt=""></li>
+			<li><img src="#" alt=""></li>
+			<li><img src="#" alt=""></li>
+			<li><img src="#" alt=""></li>
+			<li><img src="#" alt=""></li>
+			<li><img src="#" alt=""></li>
+		</ul>
+	</section>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>	
 </article>
 <!--스크립트-->
 <script src="js/index.js"></script>
